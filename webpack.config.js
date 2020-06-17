@@ -28,9 +28,26 @@ module.exports = {
 					loader:'css-loader',
 					options: {
 						modules: true,
-						importLoaders: 1
+						importLoaders: 1,
+						sourceMap: true
 					}
-				}]
+				}, {
+					loader: 'postcss-loader',
+					options: {
+						sourceMap: true,
+						ident: 'postcss',
+						plugins: (loader) => [
+							require('postcss-preset-env')
+						]
+					}
+				}, {
+					loader: 'sass-loader',
+					options: {
+						sourceMap: true,
+						implementation: require('node-sass')
+					}
+				}
+				]
 			}
 		]
 	}
