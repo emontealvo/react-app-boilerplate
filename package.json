@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
     "@babel/preset-env": "^7.10.2",
     "@babel/preset-react": "^7.10.1",
     "babel-eslint": "10.x",
@@ -39,9 +40,9 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
   },
-	"eslintConfig": {
+  "eslintConfig": {
     "extends": "react-app",
-		"parser": "babel-eslint",
-		"rules": {}
+    "parser": "babel-eslint",
+    "rules": {}
   }
 }
